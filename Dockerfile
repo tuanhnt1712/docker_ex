@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTAINER Tran Duc Thang
+MAINTAINER Nguyen Thi Tu Anh
 
 RUN DEBIAN_FRONTEND=noninteractive
 
