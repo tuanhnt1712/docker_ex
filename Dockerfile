@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-MAINTAINER Nguyen Thi Tu Anh
+MAINTAINER Tran Duc Thang
 
 RUN DEBIAN_FRONTEND=noninteractive
 
@@ -14,8 +14,8 @@ RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 
 RUN apt install nodejs
 
-RUN npm install -g yarn gulp webpack 
+RUN npm install -g yarn gulp webpack
 
-RUN apt install nginx
+RUN apt install -y nginx
 
-CMD ["/usr/sbin/nginx", "-g", "deamon off;"]
+CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
